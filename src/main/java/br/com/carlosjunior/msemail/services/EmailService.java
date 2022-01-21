@@ -47,6 +47,6 @@ public class EmailService {
 		repository.save(novoEmail);
 		
 		// Converter Entity para Dto e devolver
-		return new EmailDto();
+		return new EmailDto(novoEmail);
 	}
 }
