@@ -12,4 +12,4 @@ Utilizei: https://www.cloudamqp.com/
 
 #### AMQP: RabbitMQ
 
-![Image](# "RabbitMQ")
+![Image](https://github.com/carlosjunior1983/ms-email-java-spring/blob/main/img/print.JPG "RabbitMQ")
