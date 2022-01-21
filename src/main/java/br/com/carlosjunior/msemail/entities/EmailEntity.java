@@ -1,6 +1,8 @@
 package br.com.carlosjunior.msemail.entities;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,11 +19,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "tb_email")
-public class EmailEntity {
+public class EmailEntity implements Serializable{
 
+ 
+	private static final long serialVersionUID = 1L;
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private UUID id;
 	private String ownerRef;
 	private String emailTo;
 	private String emailFrom;
